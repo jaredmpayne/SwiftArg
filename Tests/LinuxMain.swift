@@ -2,5 +2,8 @@ import XCTest
 @testable import SwiftArgTests
 
 XCTMain([
-    testCase(SwiftArgTests.allTests),
+    testCase(LexerTests.allTests),
+    testCase(OptionTests.allTests),
+    testCase(ParserTests.allTests)
 ])
+
