@@ -1,14 +1,14 @@
-# Arg
+# SwiftArg
 
 ## A stupid simple argument parser for Swift.
 
-`Arg` is a command line parser with virtually no learning curve. It relies only on the Swift
+`SwiftArg` is a command line parser with virtually no learning curve. It relies only on the Swift
 standard library.
 
 ### Example
 
 ```swift
-import Arg
+import SwiftArg
 
 let parser = Parser()
 
@@ -49,8 +49,8 @@ on individual functions.
 
 ### Importing
 
-To import Arg into your package, just add it to your package dependencies in `Package.swift` and as
-a target dependency to any target that will `import Arg`.
+To import `SwiftArg` into your package, just add it to your package dependencies in `Package.swift` and as
+a target dependency to any target that will `import SwiftArg`.
 
 ```swift
 // swift-tools-version:4.0
@@ -60,13 +60,13 @@ import PackageDescription
 let package = Package(
     name: "YourPackage",
     dependencies: [
-        .package(url: "https://github.com/jaredmpayne/Arg.git", from: "1.0")
+        .package(url: "https://github.com/jaredmpayne/SwiftArg.git", from: "1.0")
     ]
     products: [
         .library(name: "YourPackage", targets: ["YourPackage"])
     ],
     targets: [
-        .target(name: "YourPackage", dependencies: ["Arg"]),
+        .target(name: "YourPackage", dependencies: ["SwiftArg"]),
         .testTarget(name: "YourPackageTests", dependencies: ["YourPackage"])
     ]
 )
